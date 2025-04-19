@@ -1,11 +1,10 @@
-
 import React, { useEffect, useRef, ReactNode } from 'react';
 
 interface SectionProps {
   id: string;
   className?: string;
   children: ReactNode;
-  backgroundColor: 'beige' | 'red' | 'black';
+  backgroundColor: 'beige' | 'red' | 'black' | 'white';
   textColor?: 'white' | 'black';
 }
 
@@ -46,6 +45,7 @@ const Section: React.FC<SectionProps> = ({
     beige: 'bg-hacked-beige',
     red: 'bg-hacked-red',
     black: 'bg-hacked-black',
+    white: 'bg-white',
   };
 
   const textColorMap = {
