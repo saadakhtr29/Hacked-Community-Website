@@ -1,10 +1,8 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Section from '@/components/Section';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Team from '@/components/Team';
 import Events from '@/components/Events';
 import Blog from '@/components/Blog';
 import ContactForm from '@/components/ContactForm';
@@ -46,11 +44,6 @@ const Index = () => {
         {/* About Section */}
         <Section id="about" backgroundColor="white" textColor="black">
           <About />
-        </Section>
-
-        {/* Team Section */}
-        <Section id="team" backgroundColor="beige" textColor="black">
-          <Team />
         </Section>
         
         {/* Events Section */}
