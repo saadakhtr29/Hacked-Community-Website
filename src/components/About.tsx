@@ -39,18 +39,6 @@ const About = () => {
         ))}
       </div>
 
-      <div className="text-center mt-12 mb-20">
-        <h2 className="text-4xl font-bold mb-8">Meet Our Incredible Team</h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Join us in our mission to foster innovation and learning in the tech community
-        </p>
-        <Link
-          to="/team"
-          className="inline-block bg-hacked-red text-white px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors"
-        >
-          Meet the Team
-        </Link>
-      </div>
     </div>
   );
 };
