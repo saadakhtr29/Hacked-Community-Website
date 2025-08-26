@@ -26,12 +26,22 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '/#hero' },
-    { name: 'About', href: '/#about' },
-    { name: 'Events', href: '/#events' },
-    { name: 'Blog', href: '/#blog' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Home', href: '#hero' },
+    { name: 'About', href: '#about' },
+    { name: 'Events', href: '#events' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'Contact', href: '#contact' },
   ];
+
+  const handleNavClick = (href: string) => {
+    if (href.startsWith('#')) {
+      const element = document.getElementById(href.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav
@@ -50,23 +60,13 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              item.href.startsWith('/') ? (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="font-medium hover:text-hacked-red transition-colors duration-200"
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="font-medium hover:text-hacked-red transition-colors duration-200"
-                >
-                  {item.name}
-                </a>
-              )
+              <button
+                key={item.name}
+                onClick={() => handleNavClick(item.href)}
+                className="font-medium hover:text-hacked-red transition-colors duration-200 cursor-pointer"
+              >
+                {item.name}
+              </button>
             ))}
           </div>
 
@@ -85,25 +85,13 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="flex flex-col space-y-4 mt-4 pb-4">
               {navItems.map((item) => (
-                item.href.startsWith('/') ? (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="font-medium hover:text-hacked-red transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ) : (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="font-medium hover:text-hacked-red transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                )
+                <button
+                  key={item.name}
+                  onClick={() => handleNavClick(item.href)}
+                  className="font-medium hover:text-hacked-red transition-colors duration-200 text-left"
+                >
+                  {item.name}
+                </button>
               ))}
             </div>
           </div>
