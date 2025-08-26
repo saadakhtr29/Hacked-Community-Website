@@ -34,6 +34,13 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+    
+    /* Modern gradients and textures */
+    --gradient-primary: linear-gradient(135deg, #F5F5DC 0%, #E8E8D8 50%, #F0F0E6 100%);
+    --gradient-hero: linear-gradient(135deg, #F5F5DC 0%, rgba(230, 57, 70, 0.1) 50%, #F5F5DC 100%);
+    --texture-pattern: radial-gradient(circle at 1px 1px, rgba(230, 57, 70, 0.15) 1px, transparent 0);
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.18);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -113,5 +120,47 @@
   
   .animation-delay-600 {
     animation-delay: 600ms;
+  }
+  
+  /* Modern textures and effects */
+  .hero-texture {
+    background: var(--gradient-hero);
+    background-size: 20px 20px;
+    background-image: var(--texture-pattern);
+    position: relative;
+  }
+  
+  .hero-texture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 40%, rgba(230, 57, 70, 0.05) 50%, transparent 60%);
+    pointer-events: none;
+  }
+  
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #E63946, #FF6B7A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
 }
