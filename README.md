@@ -290,7 +290,7 @@ Our community focuses on:
 
 ### 🏗️ Project Creator & Lead Developer
 
-**Saad** - *Founder & Lead Developer*
+**Saad** - *Lead Developer*
 - 🎯 **Role**: Project Creator, Architecture Designer, Lead Developer
 - 🚀 **Contributions**: 
   - Initial project conception and setup
