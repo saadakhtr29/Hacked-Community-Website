@@ -1,4 +1,4 @@
-# Hacked - Tech Community Website 🚀
+# Hacked - Tech Community Website
 
 > A vibrant community platform for innovators, creators, and tech enthusiasts at Jamia Hamdard University and beyond.
 
