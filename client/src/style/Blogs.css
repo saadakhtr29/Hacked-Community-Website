@@ -27,6 +27,10 @@
 }
 
 .blog-card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
   background: var(--card);
   box-shadow: 9px 9px 0 #000000;
   overflow: hidden;

@@ -31,8 +31,7 @@ const Hero = () => {
 
       {/* Main content */}
       <div className="hero-content">
-        <h1 className="hero-title font-display animate-fade-in">
-          <BlurText
+        <BlurText
             text="Welcome to Hacked"
             delay={150}
             animateBy="words"
@@ -40,10 +39,8 @@ const Hero = () => {
             onAnimationComplete={handleAnimationComplete}
             className="hero-title"
           />
-        </h1>
 
-        <p className="hero-subtitle animate-fade-in">
-          <TextType
+        <TextType
             text={[
               "A vibrant community of innovators, creators, and tech enthusiasts pushing the boundaries of what's possible.",
             ]}
@@ -51,8 +48,8 @@ const Hero = () => {
             pauseDuration={1500}
             showCursor={true}
             cursorCharacter="|"
+            className="hero-subtitle"
           />
-        </p>
 
         {/* CTA Buttons */}
         <div className="cta-buttons animate-fade-in">
