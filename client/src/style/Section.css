@@ -1,0 +1,56 @@
+.section {
+  /* padding: 6rem 1rem; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Backgrounds */
+.section.white {
+  background: #ffffff;
+  color: var(--foreground);
+}
+
+.section.beige {
+  background: var(--gradient-hero);
+}
+
+.section.red {
+  background: var(--hacked-red);
+  color: #ffffff;
+}
+
+.section.black {
+  background: var(--hacked-black);
+  color: #ffffff;
+}
+
+/* Text colors */
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: var(--foreground);
+}
+
+/* Beige overlay effect */
+.beige-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: 
+    radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, transparent 40%, rgba(37, 99, 235, 0.05) 50%, transparent 60%); */
+  pointer-events: none;
+}
+
+/* Container */
+.container {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  position: relative;
+  z-index: 1;
+}

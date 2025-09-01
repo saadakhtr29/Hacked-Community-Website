@@ -1,0 +1,42 @@
+{
+  "name": "server-hackedbyjh-community-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:dev": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Saad-Akhtar",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.15.0",
+    "axios": "^1.11.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "ical": "^0.8.0",
+    "nodemailer": "^7.0.6",
+    "pino": "^9.9.0",
+    "pino-pretty": "^13.1.1",
+    "rss-parser": "^3.13.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "prisma": "^6.15.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,140 @@
+.events-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: red;
+}
+
+.events-title {
+  font-size: clamp(2.4rem, 6vw, 3rem);
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.events-subtitle {
+  font-size: 1.25rem;
+  margin: 0 auto 4rem auto;
+  max-width: 48rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 9px 9px black;
+  padding: 2rem;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.event-badge {
+  display: inline-block;
+  background: rgb(200, 200, 200);
+  color: #000000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.event-description {
+  margin-bottom: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.6;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 0.875rem;
+}
+
+.register-btn {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.995);
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  box-shadow: 7px 7px red;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: rgb(0, 0, 0);
+  transform: translateY(2px) scale(1.02);
+  box-shadow: 2.5px 2.5px red;
+}
+
+.cta-section {
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 12px 12px black;
+  padding: 3rem;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.cta-text {
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.125rem;
+}
+
+.host-event-btn {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px red;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.host-event-btn:hover {
+  background: rgb(0, 0, 0);
+  transform: translateY(2px) scale(1.02);
+  box-shadow: 2.5px 2.5px red;
+}
