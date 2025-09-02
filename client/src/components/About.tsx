@@ -1,5 +1,6 @@
 import React from "react";
 import { Target, Lightbulb, Heart, Rocket } from "lucide-react";
+import CountUp from "react-countup";
 import TrueFocus from './TrueFocus';
 import "../style/About.css";
 
@@ -81,17 +82,23 @@ const About = () => {
 
         <div className="stats-grid">
           <div className="stat-card">
-            <div className="stat-number">500+</div>
+            <div className="stat-number">
+               <CountUp end={500} duration={3} enableScrollSpy/>+
+            </div>
             <p className="stat-label">Active Members</p>
           </div>
 
           <div className="stat-card">
-            <div className="stat-number">50+</div>
+            <div className="stat-number">
+               <CountUp end={50} duration={3} enableScrollSpy/>+
+            </div>
             <p className="stat-label">Events Hosted</p>
           </div>
 
           <div className="stat-card">
-            <div className="stat-number">100+</div>
+            <div className="stat-number">
+               <CountUp end={100} duration={3} enableScrollSpy/>+
+            </div>
             <p className="stat-label">Projects Built</p>
           </div>
         </div>

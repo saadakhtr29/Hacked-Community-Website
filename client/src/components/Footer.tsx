@@ -6,9 +6,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: '#', label: 'GitHub' },
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter' },
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' },
+    { icon: <Github size={20} />, href: 'https://github.com/hackedbyjh', label: 'GitHub' },
+    { icon: <Twitter size={20} />, href: 'https://x.com/JhHacked', label: 'Twitter' },
+    { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/company/hacked-jh/', label: 'LinkedIn' },
     { icon: <Mail size={20} />, href: 'mailto:hello@hacked.community', label: 'Email' },
   ];
 
@@ -20,10 +20,10 @@ const Footer = () => {
   ];
 
   const resources = [
-    { href: '#', label: 'Community Guidelines' },
-    { href: '#', label: 'Code of Conduct' },
-    { href: '#', label: 'Privacy Policy' },
-    { href: '#', label: 'Terms of Service' },
+    { href: 'Community-Guidelines', label: 'Community Guidelines' },
+    { href: 'Code-of-Conduct', label: 'Code of Conduct' },
+    { href: 'Privacy-Policy', label: 'Privacy Policy' },
+    { href: 'Terms-of-Service', label: 'Terms of Service' },
   ];
 
   return (
@@ -101,8 +101,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>© {currentYear} Hacked Community. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="Privacy-Policy">Privacy Policy</a>
+            <a href="Terms-of-Service">Terms of Service</a>
           </div>
         </div>
       </div>
