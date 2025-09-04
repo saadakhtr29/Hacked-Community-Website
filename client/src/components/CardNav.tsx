@@ -180,7 +180,7 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <div className="logo-container">
-            <img src={logo} alt={logoAlt} className="logo" />
+            <a href="/"><img src={logo} alt={logoAlt} className="logo" /></a>
           </div>
 
           <button

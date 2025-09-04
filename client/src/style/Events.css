@@ -138,3 +138,132 @@
   transform: translateY(2px) scale(1.02);
   box-shadow: 2.5px 2.5px red;
 }
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Small phones: 360px - 480px */
+@media (min-width: 360px) and (max-width: 480px) {
+  .events-title {
+    font-size: 1.75rem;
+  }
+  .events-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .event-card {
+    padding: 1.5rem;
+  }
+  .event-title {
+    font-size: 1.25rem;
+  }
+  .cta-title {
+    font-size: 1.5rem;
+  }
+  .cta-text {
+    font-size: 1rem;
+  }
+  .host-event-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Phones: 481px - 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .events-title {
+    font-size: 2rem;
+  }
+  .events-subtitle {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .event-card {
+    padding: 1.75rem;
+  }
+  .event-title {
+    font-size: 1.35rem;
+  }
+  .cta-title {
+    font-size: 1.65rem;
+  }
+  .cta-text {
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablets: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .events-title {
+    font-size: 2.25rem;
+  }
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .event-title {
+    font-size: 1.4rem;
+  }
+  .cta-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Small desktops: 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .events-title {
+    font-size: 2.5rem;
+  }
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  .cta-title {
+    font-size: 1.85rem;
+  }
+}
+
+/* Medium desktops: 1200px - 1919px */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .events-title {
+    font-size: 2.75rem;
+  }
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  .cta-title {
+    font-size: 2rem;
+  }
+}
+
+/* Large desktops: 1920px and up */
+@media (min-width: 1920px) {
+  .events-section {
+    padding: 4rem;
+  }
+  .events-title {
+    font-size: 3.25rem;
+  }
+  .events-subtitle {
+    font-size: 1.35rem;
+  }
+  .event-card {
+    padding: 2.5rem;
+  }
+  .event-title {
+    font-size: 1.65rem;
+  }
+  .cta-title {
+    font-size: 2.25rem;
+  }
+  .cta-text {
+    font-size: 1.25rem;
+  }
+  .host-event-btn {
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
+  }
+}
