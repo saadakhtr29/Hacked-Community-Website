@@ -128,3 +128,95 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Small phones: 360px - 480px */
+@media (min-width: 360px) and (max-width: 480px) {
+  .contact-form-container {
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+
+  .form-input,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Large phones: 481px - 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .contact-form-container {
+    max-width: 95%;
+    padding: 0 1.2rem;
+  }
+
+  .form-input,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablets: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-form-container {
+    max-width: 85%;
+  }
+
+  .form-input,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small desktops: 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-form-container {
+    max-width: 80%;
+  }
+}
+
+/* Medium desktops: 1200px - 1919px */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .contact-form-container {
+    max-width: 700px;
+  }
+}
+
+/* Large desktops: 1920px and above */
+@media (min-width: 1920px) {
+  .contact-form-container {
+    max-width: 800px;
+  }
+
+  .form-input,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .submit-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+  }
+}

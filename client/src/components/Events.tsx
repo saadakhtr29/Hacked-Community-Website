@@ -8,7 +8,7 @@ const Events = () => {
       title: 'AI & Machine Learning Workshop',
       date: '2025-09-15',
       time: '2:00 PM - 6:00 PM',
-      location: 'Innovation Center, Delhi',
+      location: 'Convention Center, Jamia Hamdard',
       attendees: 45,
       description: 'Hands-on workshop covering the latest in AI and ML technologies.',
       type: 'Workshop'

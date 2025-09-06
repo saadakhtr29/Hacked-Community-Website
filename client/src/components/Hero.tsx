@@ -6,7 +6,6 @@ import TextType from "./TextType";
 import "../style/Hero.css";
 
 const handleAnimationComplete = () => {
-  console.log("Animation completed!");
 };
 
 const Hero = () => {

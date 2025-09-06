@@ -7,8 +7,9 @@ const Navbar = () => {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company", href: "#" },
+        { label: "Community", ariaLabel: "About Community", href: "About-us" },
         { label: "Careers", ariaLabel: "About Careers", href: "#" },
+        { label: "PYQS", ariaLabel: "Previous Year Questions", href: "previous-year-questions" },
       ],
     },
     {
@@ -16,8 +17,9 @@ const Navbar = () => {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects", href: "#" },
+        { label: "Featured", ariaLabel: "Featured Projects", href: "Projects" },
         { label: "Case Studies", ariaLabel: "Project Case Studies", href: "#" },
+        { label: "Events", ariaLabel: "Events", href: "Events" },
       ],
     },
     {
@@ -35,6 +37,16 @@ const Navbar = () => {
           label: "LinkedIn",
           ariaLabel: "LinkedIn",
           href: "https://www.linkedin.com/company/hacked-jh/",
+        },
+        {
+          label: "Instagram",
+          ariaLabel: "Instagram",
+          href: "https://www.instagram.com/hacked.jh/",
+        },
+        {
+          label: "Github",
+          ariaLabel: "Github",
+          href: "https://github.com/hackedbyjh",
         },
       ],
     },

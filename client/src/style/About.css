@@ -34,8 +34,6 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   background: var(--gradient-primary);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   background-clip: text;
 }
 .mission-text {
@@ -52,6 +50,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin-bottom: 6rem;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .value-card {
   background: #f7f7f73c;
@@ -63,11 +62,9 @@
   border: 3px solid #000000;
   transition: all 0.3s ease;
 }
-
-.value-card:hover{
-   translate: 6px;
+.value-card:hover {
+  translate: 6px;
 }
-
 .value-icon {
   color: black;
   margin-bottom: 1rem;
@@ -116,4 +113,138 @@
 .stat-label {
   color: white;
   font-weight: 500;
+}
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Small phones: 360px - 480px */
+@media (min-width: 360px) and (max-width: 480px) {
+  .about-title {
+    font-size: 1.75rem;
+  }
+  .about-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .mission-card {
+    padding: 1.5rem;
+  }
+  .mission-title {
+    font-size: 1.5rem;
+  }
+  .mission-text {
+    font-size: 1rem;
+  }
+  .value-card {
+    width: 100%;
+  }
+  .stats-section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  .stats-title {
+    font-size: 1.75rem;
+  }
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* Phones: 481px - 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-description {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+  .mission-card {
+    padding: 2rem;
+  }
+  .value-card {
+    width: 90%;
+  }
+  .stats-title {
+    font-size: 2rem;
+  }
+  .stat-number {
+    font-size: 2.25rem;
+  }
+}
+
+/* Tablets: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-title {
+    font-size: 2.25rem;
+  }
+  .mission-title {
+    font-size: 1.75rem;
+  }
+  .value-card {
+    width: 260px;
+  }
+  .stats-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Small desktops: 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .mission-title {
+    font-size: 1.85rem;
+  }
+  .value-card {
+    width: 280px;
+  }
+  .stats-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium desktops: 1200px - 1919px */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .about-title {
+    font-size: 2.75rem;
+  }
+  .mission-title {
+    font-size: 2rem;
+  }
+  .value-card {
+    width: 300px;
+  }
+  .stats-title {
+    font-size: 2.75rem;
+  }
+}
+
+/* Large desktops: 1920px and up */
+@media (min-width: 1920px) {
+  .about-section {
+    padding: 4rem;
+  }
+  .about-title {
+    font-size: 3.25rem;
+  }
+  .about-description {
+    font-size: 1.35rem;
+  }
+  .mission-card {
+    padding: 4rem;
+  }
+  .mission-title {
+    font-size: 2.25rem;
+  }
+  .value-card {
+    width: 340px;
+  }
+  .stats-title {
+    font-size: 3rem;
+  }
+  .stat-number {
+    font-size: 3rem;
+  }
 }
