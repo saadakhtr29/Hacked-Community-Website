@@ -36,10 +36,10 @@ const Footer = () => {
   ];
 
   const resources = [
-    { href: "CommunityGuidelines", label: "Community Guidelines" },
-    { href: "CodeOfConduct", label: "Code of Conduct" },
-    { href: "PrivacyPolicy", label: "Privacy Policy" },
-    { href: "TermsOfService", label: "Terms of Service" },
+    { href: "Community-Guidelines", label: "Community Guidelines" },
+    { href: "Code-of-Conduct", label: "Code of Conduct" },
+    { href: "Privacy-Policy", label: "Privacy Policy" },
+    { href: "Terms-of-Service", label: "Terms of Service" },
   ];
 
   return (

@@ -15,10 +15,10 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/CommunityGuidelines" element={<CommunityGuidelines />} />
-        <Route path="/CodeOfConduct" element={<CodeOfConduct />} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-        <Route path="/TermsOfService" element={<TermsOfService />} />
+        <Route path="/Community-Guidelines" element={<CommunityGuidelines />} />
+        <Route path="/Code-of-Conduct" element={<CodeOfConduct />} />
+        <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
+        <Route path="/Terms-of-Service" element={<TermsOfService />} />
       </Routes>
     </BrowserRouter>
   </QueryClientProvider>
