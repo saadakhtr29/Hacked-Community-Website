@@ -255,8 +255,8 @@ Ensure you have the following installed on your system:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/hacked-community-website.git
-   cd hacked-community-website
+   git clone https://github.com/saadakhtr29/Hacked-Community-Website.git
+   cd Hacked-Community-Website
    ```
 
 2. **Navigate to the client directory**
