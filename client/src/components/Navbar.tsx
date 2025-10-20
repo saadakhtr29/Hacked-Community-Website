@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <CardNav
       logo=""
-      logoAlt="Company Logo"
+      logoAlt="Hacked by JH"
       items={items}
       baseColor="#fff"
       menuColor="#000"

@@ -52,7 +52,7 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="cta-buttons animate-fade-in">
-          <a href="#about" className="btn-primary magnetic-button">
+          <a href="https://chat.whatsapp.com/JtQgOknBrOCCgoWsl49DkA" className="btn-primary magnetic-button">
             Join Our Community
             <ArrowRight size={20} />
           </a>
